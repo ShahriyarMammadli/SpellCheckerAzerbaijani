@@ -28,7 +28,7 @@ frequencyList = hf.createFrequencyList(refFileName, vocabulary['Words'].tolist()
 symspell = SymSpell()
 symspell.load_dictionary(freqFileName, 0, 1, encoding="utf-8")
 
-word = "isdək"
+word = "ətirlar"
 # Use documentation to perform custom edits
 # https://symspellpy.readthedocs.io/en/latest/api/index.html
 suggestions = symspell.lookup(word, Verbosity.CLOSEST,

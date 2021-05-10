@@ -28,7 +28,7 @@ frequencyList = hf.createFrequencyList(refFileName, vocabulary['Words'].tolist()
 symspell = SymSpell()
 symspell.load_dictionary(freqFileName, 0, 1, encoding="utf-8")
 
-word = "yaxsı"
+word = "isdək"
 # Use documentation to perform custom edits
 # https://symspellpy.readthedocs.io/en/latest/api/index.html
 suggestions = symspell.lookup(word, Verbosity.CLOSEST,
@@ -37,5 +37,3 @@ suggestions = symspell.lookup(word, Verbosity.CLOSEST,
 # List the suggestions for the word, in descending order
 for suggestion in suggestions:
     print(suggestion)
-
-# TODO: Create a better and clean reference text, REMOVE reference text from here, copy to datasets section

@@ -25,7 +25,6 @@ try:
     print("Trying to read pre-formed word-frequency table.")
     with open(pickleFileName, 'rb') as handle:
         frequencyList = pickle.load(handle)
-    print(frequencyList)
 except:
     print("Couldn't find the table, trying to recreate it using the reference text.")
     try:
@@ -36,4 +35,4 @@ except:
         print("Couldn't find the reference file.")
         quit()
 
-print(hf.correct('Dünizin səthinnda üfüqq xət', alphabet, frequencyList))
+print(hf.correct('Dünizin səthindakı üfüqq parlağlığ', alphabet, frequencyList))
